@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.upload-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 340px;
+  /* ปรับขนาดให้เป็น 340px */
+}
+h2 {
+  margin-bottom: 15px;
+}
+.image-preview-container {
+  width: 300px;
+  /* ขนาดของกรอบ */
+  height: 300px;
+  /* ขนาดของกรอบ */
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+.image-preview-container p {
+  color: #999;
+}
+.image-preview-container:hover {
+  border-color: #0056b3;
+}
+canvas {
+  cursor: grab;
+  display: none;
+}
+#zoomRange {
+  width: 100%;
+  margin: 10px 0;
+}
+#exportButton {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#exportButton:hover {
+  background-color: #0056b3;
+}

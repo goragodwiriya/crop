@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>อัปโหลดรูปภาพประจำตัว</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="upload-container">
+    <h2>อัปโหลดรูปภาพประจำตัว</h2>
+    <div id="dropArea" class="image-preview-container">
+      <canvas id="imageCanvas" width="300" height="300"></canvas>
+      <p>คลิกที่นี่เพื่ออัปโหลดไฟล์</p>
+    </div>
+    <input type="file" id="imageUpload" class="file-input" accept="image/*" hidden>
+    <label for="zoomRange">ปรับขนาด: </label>
+    <input type="range" id="zoomRange" min="0.5" max="3" value="1" step="0.1">
+    <button id="exportButton">ส่งออกเป็น WebP</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
